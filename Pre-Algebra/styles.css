@@ -1,9 +1,23 @@
 body{}
+nav{
+	margin:0;
+	padding:0;
+	width:20%;
+	height:100%;
+	background-color:#0000FF;
+}
+nav.a{
+	color:#FFF;
+}
+#main{
+	width:80%;
+	}
 #calendar_section{
 	display:flex;
 	flex-direction:row;
 	flex-wrap:wrap;
-	width:90%;
+	width:100%;
+	overflow:auto;
 }
 
 .day{
@@ -13,4 +27,9 @@ body{}
 	padding:15px;
 	width: 200px;
 }
-	
+.resources{
+	display:none;
+}
+.day:hover > .resources{
+	display:block;
+}	
