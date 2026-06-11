@@ -2,7 +2,7 @@ body{}
 #topic_bar{
 	margin:0;
 	padding:0;
-	width:30%;
+	width:25%;
 	height:100%;
 	background-color:#0032A0;
 	position:fixed;
@@ -44,7 +44,7 @@ a{
 	transition: color 125ms ease-in-out;
 }
 #main{
-	width:70%;
+	width:75%;
 	height:80%;
 	margin-left:auto;
 	margin-right:0;
@@ -66,15 +66,25 @@ a{
 .day{
 	border: solid black 2px;
 	border-radius:10px;
-	margin: 15px;
-	padding:15px;
+	margin: 10px;
+	padding:10px;
 	width: 200px;
 }
+.day h2{
+	font-size: 1rem;
+	text-align:center;
+}
+
 .resources{
 	display:none;
+	
 }
 .day:hover > .resources{
 	display:block;
+	font-size: 0.8rem;
+	text-align:left;
+	margin-left:5px;
+	padding-left:5px;
 }	
 #masthead{
 	width:100%;
