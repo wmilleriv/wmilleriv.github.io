@@ -56,6 +56,11 @@ a{
 	margin:auto;
 	text-align:center;
 }
+#text_container{
+	display:block;
+	padding:20px;
+	margin:20px;
+}
 #calendar_section{
 	display:flex;
 	flex-direction:row;
