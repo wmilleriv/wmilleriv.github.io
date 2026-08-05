@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Python Terminal</title>
+    
+    <!-- Link PyScript CSS and JavaScript Core -->
+    <link rel="stylesheet" href="https://pyscript.net">
+    <script type="module" src="https://pyscript.net"></script>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #333;
+        }
+        /* Style the terminal container */
+        .terminal-box {
+            margin-top: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Interactive Python Terminal</h1>
+        <p>Type your Python code below and press <strong>Shift + Enter</strong> to execute it.</p>
+        
+        <!-- The Interactive Python Terminal element -->
+        <div class="terminal-box">
+            <script type="py" terminal worker>
+				name = input("What is your name? ")
+				print(f"Hello, {name}")
+			</script>
+        </div>
+    </div>
+
+</body>
+</html>
