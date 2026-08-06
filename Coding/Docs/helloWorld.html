@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link rel='stylesheet' href='../../styles.css'>
+		<link rel='stylesheet' href='../terminal-styles.css'>
 		<title>OLMC Pre-Algebra - About</title>
 		<link rel="apple-touch-icon" sizes="57x57" href="../../assets/imgs/favicons/apple-touch-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="../../assets/imgs/favicons/apple-touch-icon-60x60.png">
@@ -27,8 +28,12 @@
 		<meta name="msapplication-TileImage" content="../assets/imgs/favicons/mstile-144x144.png">
 		<meta name="msapplication-config" content="../assets/imgs/favicons/browserconfig.xml">
 		<meta name="theme-color" content="#ffffff">
-		<link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
-		<script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery.terminal@2.35.2/js/jquery.terminal.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery.terminal@2.35.2/js/unix_formatting.min.js"></script>
+		<link href="https://cdn.jsdelivr.net/npm/jquery.terminal@2.35.2/css/jquery.terminal.min.css" rel="stylesheet">
+		<link  href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐍</text></svg>" rel="icon">
+		<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4405a86c36a84efca5dbde1b25edd153"}'></script>
 	</head>
 	<body>
 		<header id="masthead">
@@ -36,9 +41,12 @@
 		</header>
 		<section id="main">
 			<div id="text_container">
-				<script type="py" terminal worker>
-					print("Hello World")
-				</script>
+			<div id="jquery-terminal-logo">
+				<a href="https://terminal.jcubic.pl/">jQuery Terminal</a>
+			</div>
+			<div id="loading"></div>
+			<script src="../scripts/terminal.js">
+			</script>
 				
 			</div>
 		</section>
